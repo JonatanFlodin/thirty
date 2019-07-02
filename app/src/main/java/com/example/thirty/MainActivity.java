@@ -19,7 +19,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void playGame(View view){
+        GameActivity.currentRound = 0;
+        GameActivity.scoreList = new int[10];
+        boolean[] usedSumTypes = new boolean[10];
         Intent intent = new Intent(this, GameActivity.class);
+        intent.putExtra(GameActivity.USED_SUM_TYPES, usedSumTypes);
         startActivity(intent);
     }
 

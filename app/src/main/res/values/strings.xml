@@ -1,6 +1,21 @@
 <resources>
-    <string name="app_name">thirty</string>
+    <string name="app_name">Thirty</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choice_low">Low</string>
+    <string name="choice_four">Four</string>
+    <string name="choice_five">Five</string>
+    <string name="choice_six">Six</string>
+    <string name="choice_seven">Seven</string>
+    <string name="choice_eight">Eight</string>
+    <string name="choice_nine">Nine</string>
+    <string name="choice_ten">Ten</string>
+    <string name="choice_eleven">Eleven</string>
+    <string name="choice_twelve">Twelve</string>
+
+    <string name="result_item">%1$s - %2$d</string>
+    <string name="combo_count">%1$d combinations of %2$s.</string>
+    <string name="rolls_left">Rolls left: %1$d</string>
+    <string name="combo_score">Combo score: %1$d</string>
+    <string name="select_low_combo">Select all dice with a max value of three.</string>
+
 </resources>
