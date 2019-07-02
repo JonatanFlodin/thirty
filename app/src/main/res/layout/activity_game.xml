@@ -6,51 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".GameActivity">
 
-    <ImageView
+    <ImageButton
         android:id="@+id/die1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="27dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="28dp"
         app:srcCompat="@drawable/white1" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/die2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/die1"
         android:layout_alignBottom="@+id/die1"
-        android:layout_marginStart="25dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginBottom="0dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="1dp"
         android:layout_toEndOf="@+id/die1"
         android:layout_toRightOf="@+id/die1"
         app:srcCompat="@drawable/white2" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/die3"
         android:layout_width="79dp"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/die2"
         android:layout_alignBottom="@+id/die2"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
         android:layout_marginTop="0dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
         android:layout_marginBottom="0dp"
         android:layout_toEndOf="@+id/die2"
         android:layout_toRightOf="@+id/die2"
         app:srcCompat="@drawable/white3" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/die4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -66,7 +62,7 @@
         android:layout_marginRight="0dp"
         app:srcCompat="@drawable/white4" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/die5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -82,19 +78,19 @@
         android:layout_marginRight="0dp"
         app:srcCompat="@drawable/white5" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/die6"
-        android:layout_width="wrap_content"
+        android:layout_width="95dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/die3"
         android:layout_alignStart="@+id/die3"
         android:layout_alignLeft="@+id/die3"
         android:layout_alignEnd="@+id/die3"
         android:layout_alignRight="@+id/die3"
-        android:layout_marginStart="3dp"
+        android:layout_marginStart="-8dp"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="25dp"
-        android:layout_marginEnd="6dp"
+        android:layout_marginEnd="-8dp"
         android:layout_marginRight="0dp"
         app:srcCompat="@drawable/white6" />
 
