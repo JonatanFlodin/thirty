@@ -74,6 +74,7 @@ public class Dice implements Parcelable {
      * @param ID ID to apply to this die
      */
     public void setID(String ID) {
+
         this.ID = ID;
     }
 
@@ -82,6 +83,7 @@ public class Dice implements Parcelable {
      * @return ID of this die
      */
     public String getID() {
+
         return this.ID;
     }
 
@@ -89,13 +91,16 @@ public class Dice implements Parcelable {
      * Set amount of sides on the die
      * @param sides amount of sides wanted on this die
      */
-    public void setSides(int sides) { this.sides = sides; }
+    public void setSides(int sides) {
+        this.sides = sides;
+    }
 
     /**
      * Set new face of this die
      * @param number The number to represent as a face
      */
     public void setFace(int number) {
+
         this.face = number - 1;
     }
 
@@ -103,31 +108,40 @@ public class Dice implements Parcelable {
      * Gets the face number of this die
      * @return an integer representing the die face
      */
-    public int getFace() { return this.face; }
+    public int getFace() {
+        return this.face;
+    }
 
     /**
      * Gets the current number showing on the die
      * @return the current number of the die as an integer
      */
-    public int getNumber() { return this.number; }
+    public int getNumber() {
+        return this.number;
+    }
 
     /**
      * Sets the current number of the die
      * @param number the number to set on the die
      */
-    public void setNumber(int number) { this.number = number; }
+    public void setNumber(int number) {
+        this.number = number;
+    }
 
     /**
      * Sets the save state of the die
      * @param saved boolean value to represent the save state
      */
-    public void setSaved(boolean saved) { this.saved = saved; }
+    public void setSaved(boolean saved) {
+        this.saved = saved;
+    }
 
     /**
      * Sets the disabled state of the die
      * @param saved boolean value to represent the disabled state
      */
     public void setDisabled(boolean disabled) {
+
         this.disabled = disabled;
     }
 
@@ -135,13 +149,16 @@ public class Dice implements Parcelable {
      * Checks if current die is saved
      * @return a boolean value representing the current save state
      */
-    public boolean isSaved() { return saved; }
+    public boolean isSaved() {
+        return saved;
+    }
 
     /**
      * Checks if current die is disabled
      * @return a boolean value representing the current disabled state
      */
     public boolean isDisabled() {
+
         return disabled;
     }
 

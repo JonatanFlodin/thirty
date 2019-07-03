@@ -214,7 +214,6 @@ public class CalculateScoreActivity extends AppCompatActivity {
             }
             if(sum == chosenType) {
                 // Make used dice red and unclickable
-                // to discern from the rest.
                 for(int i = 0; i < dice.length; i++) {
                     if(dice[i].isSaved()) {
                         dice[i].setSaved(false);
