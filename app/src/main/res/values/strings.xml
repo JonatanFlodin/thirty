@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Thirty</string>
     <string name="result_item">%1$s - %2$d</string>
-    <string name="combo_count">%1$d combinations of %2$s.</string>
+    <string name="combo_count">%1$d combos of %2$s.</string>
     <string name="rolls_left">Rolls left: %1$d</string>
     <string name="combo_score">Combo score: %1$d</string>
     <string name="select_low_combo">Select all dice with a max value of three.</string>

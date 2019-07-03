@@ -6,7 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".InstructionsActivity">
 
-    <TextView
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <TextView
         android:id="@+id/title"
         android:layout_width="141dp"
         android:layout_height="48dp"
@@ -17,27 +22,29 @@
         android:text="Dice Game Thirty"
         android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/title"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="43dp"
-        android:text="How to play." />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:text="How to play." />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="15dp"
-        android:text="Roll your 6 dice. \nTap on the dice that you want to save for the next roll.
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="15dp"
+            android:text="Roll your 6 dice. \nTap on the dice that you want to save for the next roll.
 \nRoll up to 3 times and then choose the value you want to use.\nThen tap the dice that adds up to the
 chosen value and add to the combo, if you have more than one combo, now press the other dice that adds
 up to the chosen value and save those to the combo. \nAll values can and must be used once. \nThe value Low
 adds all dice with a value below 4." />
+    </RelativeLayout>
+
 </RelativeLayout>

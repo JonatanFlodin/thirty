@@ -6,176 +6,200 @@
     android:layout_height="match_parent"
     tools:context=".CalculateScoreActivity">
 
-
-    <ImageButton
-        android:id="@+id/dice1"
-        android:onClick="saveDice"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="253dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="28dp"
-        app:srcCompat="@drawable/white1" />
+        android:layout_centerInParent="true">
 
-    <ImageButton
-        android:id="@+id/dice2"
-        android:onClick="saveDice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/dice1"
-        android:layout_marginStart="7dp"
-        android:layout_marginLeft="7dp"
-        android:layout_marginBottom="0dp"
-        android:layout_toEndOf="@+id/dice1"
-        android:layout_toRightOf="@+id/dice1"
-        app:srcCompat="@drawable/white2" />
+        <ImageButton
+            android:id="@+id/dice1"
+            android:layout_width="83dp"
+            android:layout_height="83dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:onClick="saveDice"
+            app:srcCompat="@drawable/white1" />
 
-    <ImageButton
-        android:id="@+id/dice3"
-        android:onClick="saveDice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/dice2"
-        android:layout_alignBottom="@+id/dice2"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="-1dp"
-        android:layout_marginBottom="1dp"
-        android:layout_toEndOf="@+id/dice2"
-        android:layout_toRightOf="@+id/dice2"
-        app:srcCompat="@drawable/white3" />
+        <ImageButton
+            android:id="@+id/dice2"
+            android:layout_width="77dp"
+            android:layout_height="83dp"
+            android:layout_alignBottom="@+id/dice1"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/dice1"
+            android:layout_toRightOf="@+id/dice1"
+            android:onClick="saveDice"
+            app:srcCompat="@drawable/white2" />
 
-    <ImageButton
-        android:id="@+id/dice4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/dice1"
-        android:layout_alignStart="@+id/dice1"
-        android:layout_alignLeft="@+id/dice1"
-        android:layout_alignEnd="@+id/dice1"
-        android:layout_alignRight="@+id/dice1"
-        android:layout_marginStart="1dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginRight="0dp"
-        android:onClick="saveDice"
-        app:srcCompat="@drawable/white4" />
+        <ImageButton
+            android:id="@+id/dice3"
+            android:layout_width="80dp"
+            android:layout_height="78dp"
+            android:layout_alignTop="@+id/dice2"
+            android:layout_alignBottom="@+id/dice2"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/dice2"
+            android:layout_toRightOf="@+id/dice2"
+            android:onClick="saveDice"
+            app:srcCompat="@drawable/white3" />
 
-    <ImageButton
-        android:id="@+id/dice5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/dice2"
-        android:layout_alignStart="@+id/dice2"
-        android:layout_alignLeft="@+id/dice2"
-        android:layout_alignEnd="@+id/dice2"
-        android:layout_alignRight="@+id/dice2"
-        android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginRight="1dp"
-        android:onClick="saveDice"
-        app:srcCompat="@drawable/white5" />
+        <ImageButton
+            android:id="@+id/dice4"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:layout_below="@+id/dice1"
+            android:layout_alignStart="@+id/dice1"
+            android:layout_alignLeft="@+id/dice1"
+            android:layout_alignEnd="@+id/dice1"
+            android:layout_alignRight="@+id/dice1"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:onClick="saveDice"
+            app:srcCompat="@drawable/white4" />
 
-    <ImageButton
-        android:id="@+id/dice6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/dice3"
-        android:layout_alignStart="@+id/dice3"
-        android:layout_alignLeft="@+id/dice3"
-        android:layout_alignEnd="@+id/dice3"
-        android:layout_alignRight="@+id/dice3"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="0dp"
-        android:onClick="saveDice"
-        app:srcCompat="@drawable/white6" />
+        <ImageButton
+            android:id="@+id/dice5"
+            android:layout_width="78dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/dice2"
+            android:layout_alignStart="@+id/dice2"
+            android:layout_alignLeft="@+id/dice2"
+            android:layout_alignEnd="@+id/dice2"
+            android:layout_alignRight="@+id/dice2"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:onClick="saveDice"
+            app:srcCompat="@drawable/white5" />
 
-    <Spinner
-        android:id="@+id/scoretype_spinner"
-        android:layout_width="189dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/dice4"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="37dp"
-        android:layout_marginLeft="37dp"
-        android:layout_marginTop="51dp" />
+        <ImageButton
+            android:id="@+id/dice6"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:layout_below="@+id/dice3"
+            android:layout_alignStart="@+id/dice3"
+            android:layout_alignLeft="@+id/dice3"
+            android:layout_alignEnd="@+id/dice3"
+            android:layout_alignRight="@+id/dice3"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:onClick="saveDice"
+            app:srcCompat="@drawable/white6" />
 
-    <TextView
-        android:id="@+id/chosen_value"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/scoretype_spinner"
-        android:layout_alignBottom="@+id/scoretype_spinner"
-        android:layout_marginStart="3dp"
-        android:layout_marginLeft="3dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginBottom="1dp"
-        android:layout_toEndOf="@+id/scoretype_spinner"
-        android:layout_toRightOf="@+id/scoretype_spinner"
-        android:text="Choosen value"
-        android:textSize="18sp" />
+        <Spinner
+            android:id="@+id/scoretype_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chosen_value"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="0dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="8dp" />
 
-    <TextView
-        android:id="@+id/combo_amount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/check_combo"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginRight="27dp"
-        android:layout_toEndOf="@+id/check_combo"
-        android:layout_toRightOf="@+id/check_combo"
-        android:text="0 combinations of value 5" />
+        <TextView
+            android:id="@+id/chosen_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dice5"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="0dp"
+            android:text="Choosen value"
+            android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/check_combo"
-        android:onClick="checkCombo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/scoretype_spinner"
-        android:layout_alignStart="@+id/scoretype_spinner"
-        android:layout_alignLeft="@+id/scoretype_spinner"
-        android:layout_marginStart="1dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="10dp"
-        android:text="Add combo to score" />
+        <TextView
+            android:id="@+id/combo_amount"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/check_combo"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/check_combo"
+            android:layout_toRightOf="@+id/check_combo"
+            android:maxLines="3"
+            android:text="0 combos of value 5" />
 
-    <Button
-        android:id="@+id/save_combos"
-        android:onClick="saveCombos"
-        android:layout_width="383dp"
-        android:layout_height="69dp"
-        android:layout_below="@+id/current_value_score"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginRight="15dp"
-        android:text="Next round" />
+        <Button
+            android:id="@+id/check_combo"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scoretype_spinner"
+            android:layout_alignStart="@+id/scoretype_spinner"
+            android:layout_alignLeft="@+id/scoretype_spinner"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:onClick="checkCombo"
+            android:text="Add combo to score" />
 
-    <TextView
-        android:id="@+id/current_value_score"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_below="@+id/check_combo"
-        android:layout_alignStart="@+id/check_combo"
-        android:layout_alignLeft="@+id/check_combo"
-        android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="1dp"
-        android:text="Score of chosen value: 0"
-        android:textSize="18sp" />
+        <Button
+            android:id="@+id/save_combos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/current_value_score"
+            android:layout_alignEnd="@+id/dice6"
+            android:layout_alignRight="@+id/dice6"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="-6dp"
+            android:layout_marginRight="-6dp"
+            android:layout_marginBottom="0dp"
+            android:onClick="saveCombos"
+            android:text="Next round" />
+
+        <TextView
+            android:id="@+id/current_value_score"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/check_combo"
+            android:layout_alignStart="@+id/check_combo"
+            android:layout_alignLeft="@+id/check_combo"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="1dp"
+            android:text="Score of chosen value: 0"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+
 
 </RelativeLayout>
