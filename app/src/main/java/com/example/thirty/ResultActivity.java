@@ -20,9 +20,9 @@ public class ResultActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
-    }}
+
         // Grab the result list to fill with result values
-       /* ListView resultListView = (ListView)findViewById(R.id.result_list);
+        ListView resultListView = (ListView)findViewById(R.id.result_list);
 
         // Contains all the different score methods in the game
         String[] scoreOptions = getResources().getStringArray(R.array.scoreChoices);
@@ -43,7 +43,7 @@ public class ResultActivity extends AppCompatActivity {
 
         // Update text that represents final sum
         TextView finalSumView = (TextView) findViewById(R.id.final_sum);
-        finalSumView.setText("Final sum: " + finalSum);
+        finalSumView.setText(String.format(getResources().getString(R.string.final_sum), finalSum));
     }
 
     /**
@@ -51,7 +51,8 @@ public class ResultActivity extends AppCompatActivity {
      * when user click on the main menu button
      * @param view view of clicked button
      */
-    /*public void backToMainMenu(View view) {
+    public void backToMainMenu(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
-    }*/
+    }
+}

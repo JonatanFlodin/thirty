@@ -17,11 +17,28 @@
     </FrameLayout>
 
     <Button
-        android:id="@+id/play_game"
-        android:onClick="playGame"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/play_game_btn"
+        android:layout_width="137dp"
+        android:layout_height="85dp"
         android:layout_centerInParent="true"
-        android:text="Play"/>
+        android:onClick="playGame"
+        android:text="Play" />
+
+    <Button
+        android:id="@+id/instructions_btn"
+        android:onClick="readInstructions"
+        android:layout_width="137dp"
+        android:layout_height="85dp"
+        android:layout_below="@+id/play_game_btn"
+        android:layout_alignStart="@+id/play_game_btn"
+        android:layout_alignLeft="@+id/play_game_btn"
+        android:layout_alignEnd="@+id/play_game_btn"
+        android:layout_alignRight="@+id/play_game_btn"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginRight="-1dp"
+        android:text="Instructions" />
 
 </RelativeLayout>

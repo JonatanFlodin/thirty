@@ -27,6 +27,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void readInstructions(View view){
+        Intent intent = new Intent(this, InstructionsActivity.class);
+        startActivity(intent);
+    }
+
 
 
 }

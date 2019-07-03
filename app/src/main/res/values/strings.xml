@@ -1,21 +1,48 @@
 <resources>
     <string name="app_name">Thirty</string>
-
-    <string name="choice_low">Low</string>
-    <string name="choice_four">Four</string>
-    <string name="choice_five">Five</string>
-    <string name="choice_six">Six</string>
-    <string name="choice_seven">Seven</string>
-    <string name="choice_eight">Eight</string>
-    <string name="choice_nine">Nine</string>
-    <string name="choice_ten">Ten</string>
-    <string name="choice_eleven">Eleven</string>
-    <string name="choice_twelve">Twelve</string>
-
     <string name="result_item">%1$s - %2$d</string>
     <string name="combo_count">%1$d combinations of %2$s.</string>
     <string name="rolls_left">Rolls left: %1$d</string>
     <string name="combo_score">Combo score: %1$d</string>
     <string name="select_low_combo">Select all dice with a max value of three.</string>
+    <string name="final_sum">Final sum: %1$d</string>
+
+    <string-array name="scoreChoices">
+        <item>Low</item>
+        <item>Four</item>
+        <item>Five</item>
+        <item>Six</item>
+        <item>Seven</item>
+        <item>Eight</item>
+        <item>Nine</item>
+        <item>Ten</item>
+        <item>Eleven</item>
+        <item>Twelve</item>
+    </string-array>
+
+    <array name="greyDice">
+        <item>@drawable/grey1</item>
+        <item>@drawable/grey2</item>
+        <item>@drawable/grey3</item>
+        <item>@drawable/grey4</item>
+        <item>@drawable/grey5</item>
+        <item>@drawable/grey6</item>
+    </array>
+    <array name="redDice">
+        <item>@drawable/red1</item>
+        <item>@drawable/red2</item>
+        <item>@drawable/red3</item>
+        <item>@drawable/red4</item>
+        <item>@drawable/red5</item>
+        <item>@drawable/red6</item>
+    </array>
+    <array name="whiteDice">
+        <item>@drawable/white1</item>
+        <item>@drawable/white2</item>
+        <item>@drawable/white3</item>
+        <item>@drawable/white4</item>
+        <item>@drawable/white5</item>
+        <item>@drawable/white6</item>
+    </array>
 
 </resources>
