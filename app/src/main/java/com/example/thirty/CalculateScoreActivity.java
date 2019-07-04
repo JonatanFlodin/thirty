@@ -132,32 +132,30 @@ public class CalculateScoreActivity extends AppCompatActivity {
      */
     public int getPositionFromText(String text) {
         // The string representations of the different score methods.
-        Resources r = getResources();
-        if(text.equals("Low")) {
-            return 0;
-        } else if(text.equals("Four")) {
-            return 1;
-        } else if(text.equals("Five")) {
-            return 2;
-        } else if(text.equals("Six")) {
-            return 3;
-        } else if(text.equals("Seven")) {
-            return 4;
-        } else if(text.equals("Eight")) {
-            return 5;
-        } else if(text.equals("Nine")) {
-            return 6;
-        } else if(text.equals("Ten")) {
-            return 7;
-        } else if(text.equals("Eleven")) {
-            return 8;
-        } else if(text.equals("Twelve")) {
-            return 9;
-        } else {
-            // No options left
-            return -1;
+        switch(text){
+            case "Low":
+                return 0;
+            case "Four":
+                return 1;
+            case "Five":
+                return 2;
+            case "Six":
+                return 3;
+            case "Seven":
+                return 4;
+            case "Eight":
+                return 5;
+            case "Nine":
+                return 6;
+            case "Ten":
+                return 7;
+            case "Eleven":
+                return 8;
+            case "Twelve":
+                return 9;
+            default:
+                return -1;
         }
-
     }
 
     /**
@@ -178,6 +176,17 @@ public class CalculateScoreActivity extends AppCompatActivity {
                 if(dice[i].isSaved()) {
                     if(dice[i].getNumber() <= 3) {
                         sum += dice[i].getNumber();
+
+                        for(int j = 0; j < dice.length; j++) {
+                            if(dice[j].isSaved()) {
+                                dice[j].setSaved(false);
+                                dice[j].setDisabled(true);
+                                View v = findViewById(android.R.id.content);
+                                ImageButton b = GameActivity.getButton(v, dice[j].getID());
+                                b.setEnabled(false);
+                                GameActivity.toggleDiceImage(v, dice[j]);
+                            }
+                        }
                     } else {
                         Context context = getApplicationContext();
                         CharSequence text = "Only dice with values below 4 added to sum";
@@ -190,16 +199,7 @@ public class CalculateScoreActivity extends AppCompatActivity {
 
             // Make used dice red and unclickable
             // to discern from the rest.
-            for(int i = 0; i < dice.length; i++) {
-                if(dice[i].isSaved()) {
-                    dice[i].setSaved(false);
-                    dice[i].setDisabled(true);
-                    View v = findViewById(android.R.id.content);
-                    ImageButton b = GameActivity.getButton(v, dice[i].getID());
-                    b.setEnabled(false);
-                    GameActivity.toggleDiceImage(v, dice[i]);
-                }
-            }
+
             // Update combo text
             comboSum += sum;
             TextView text2 = (TextView)findViewById(R.id.current_value_score);
