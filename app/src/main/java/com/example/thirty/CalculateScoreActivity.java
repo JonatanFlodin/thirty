@@ -206,12 +206,17 @@ public class CalculateScoreActivity extends AppCompatActivity {
             text2.setText(String.format(getResources().getString(R.string.combo_score), comboSum));
 
         } else {
+            for (Dice dice: dice){
+                if (dice.isSaved()){
+                    sum += dice.getNumber();
+                }
+            }
             // Count sum of current combo.
-            for(int i = 0; i < dice.length; i++) {
+            /*for(int i = 0; i < dice.length; i++) {
                 if(dice[i].isSaved()) {
                     sum += dice[i].getNumber();
                 }
-            }
+            }*/
             if(sum == chosenType) {
                 // Make used dice red and unclickable
                 for(int i = 0; i < dice.length; i++) {
